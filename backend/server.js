@@ -36,8 +36,10 @@ app.use(limiter);
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
     ? [
-        'https://your-vercel-app.vercel.app', 
-        'https://your-custom-domain.com'  // Add your custom domain here
+        'https://turing-station.vercel.app',
+        'https://megat-net.link',
+        'https://megat-net.link:3001',
+        'https://*.vercel.app'
       ]
     : ['http://localhost:5173', 'http://127.0.0.1:5173'], // Vite default ports
   credentials: true,
